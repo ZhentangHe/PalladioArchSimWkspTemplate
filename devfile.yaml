@@ -1,7 +1,12 @@
 apiVersion: 1.0.0
 metadata:
-  generateName: kit-palladio-
+  generateName: che-palladio-
+projects:
+  - name: palladio-simulation
+    source:
+      type: git
+      location: "https://github.com/ZhentangHe/palladio-simulation.git"
 components:
   - type: chePlugin
-    reference: 'https://raw.githubusercontent.com/ZhentangHe/PalladioSimDev/master/plugins/domainmodel-language-server.yaml'
+    reference: 'https://raw.githubusercontent.com/merlinz165/che-trial/master/plugins/domainmodel-language-server.yaml'
     alias: domainmodel-language-server
