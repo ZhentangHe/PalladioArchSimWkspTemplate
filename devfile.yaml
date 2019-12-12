@@ -13,10 +13,10 @@ components:
     type: chePlugin
 components:
   - type: dockerimage
-    image: dummy
+    image: mongo
     memoryLimit: 512Mi
     mountSources: true
-    command: ['sleep', 'infinity']
+#    command: ['sleep', 'infinity']
     volumes:
       - name: cache
         containerPath: /.cache
