@@ -20,7 +20,6 @@ components:
     volumes:
       - name: cache
         containerPath: /.cache
-Specifying container memo
 # components:
 #  - type: chePlugin
 #    reference: 'https://raw.githubusercontent.com/merlinz165/che-trial/master/plugins/domainmodel-language-server.yaml'
