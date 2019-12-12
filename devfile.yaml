@@ -6,7 +6,7 @@ projects:
     source:
       type: git
       location: "https://github.com/ZhentangHe/palladio-simulation-che.git"
-components:
-  - type: chePlugin
-    reference: 'https://raw.githubusercontent.com/merlinz165/che-trial/master/plugins/domainmodel-language-server.yaml'
-    alias: domainmodel-language-server
+# components:
+#  - type: chePlugin
+#    reference: 'https://raw.githubusercontent.com/merlinz165/che-trial/master/plugins/domainmodel-language-server.yaml'
+#    alias: domainmodel-language-server
