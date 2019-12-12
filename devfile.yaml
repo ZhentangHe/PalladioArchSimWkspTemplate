@@ -11,15 +11,15 @@ components:
     type: chePlugin
   - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
     type: chePlugin
-components:
-  - type: dockerimage
-    image: dummy
-    memoryLimit: 512Mi
-    mountSources: true
+#components:
+#  - type: dockerimage
+#    image: dummy
+#    memoryLimit: 512Mi
+#    mountSources: true
 #    command: ['sleep', 'infinity']
-    volumes:
-      - name: cache
-        containerPath: /.cache
+#    volumes:
+#      - name: cache
+#        containerPath: /.cache
 # components:
 #  - type: chePlugin
 #    reference: 'https://raw.githubusercontent.com/merlinz165/che-trial/master/plugins/domainmodel-language-server.yaml'
