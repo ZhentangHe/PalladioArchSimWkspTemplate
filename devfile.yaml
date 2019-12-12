@@ -6,6 +6,11 @@ projects:
     source:
       type: git
       location: "https://github.com/ZhentangHe/palladio-simulation-che.git"
+components:
+  - id: che-incubator/theia-dev/latest
+    type: chePlugin
+  - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
+    type: chePlugin
 # components:
 #  - type: chePlugin
 #    reference: 'https://raw.githubusercontent.com/merlinz165/che-trial/master/plugins/domainmodel-language-server.yaml'
