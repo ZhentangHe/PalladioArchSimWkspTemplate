@@ -13,13 +13,16 @@ projects:
 #    type: chePlugin
 components:
   - type: dockerimage
-    image: williamyeh/dummy
+    image: hezhentang/prak_wam_test
     memoryLimit: 1Gi
     mountSources: true
 #    command: ['sleep', 'infinity']
     volumes:
       - name: cache
         containerPath: /.cache
+    env:
+    - name: PALLADIOPATH
+      value: $(CHE_PROJECTS_ROOT)/Palladio
 # components:
 #  - type: chePlugin
 #    reference: 'https://raw.githubusercontent.com/merlinz165/che-trial/master/plugins/domainmodel-language-server.yaml'
