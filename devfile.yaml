@@ -6,15 +6,15 @@ projects:
     source:
       type: git
       location: "https://github.com/ZhentangHe/palladio-simulation-che.git"
-components:
-  - id: che-incubator/theia-dev/latest
-    type: chePlugin
-  - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
-    type: chePlugin
+# components:
+#  - id: che-incubator/theia-dev/latest
+#    type: chePlugin
+#  - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
+#    type: chePlugin
 components:
   - type: dockerimage
-    image: hello-world
-    memoryLimit: 2Gi
+    image: dummy
+    memoryLimit: 1Gi
     mountSources: true
 #    command: ['sleep', 'infinity']
     volumes:
