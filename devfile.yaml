@@ -13,8 +13,8 @@ projects:
 #    type: chePlugin
 components:
   - type: dockerimage
-    image: hezhentang/prak_wam_test
-    memoryLimit: 1Gi
+    image: hezhentang/dummy
+    memoryLimit: 512Mi
     mountSources: true
 #    command: ['sleep', 'infinity']
     volumes:
