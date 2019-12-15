@@ -13,7 +13,7 @@ components:
     type: chePlugin
 components:
   - type: dockerimage
-    image: golang
+    image: hello-world
     memoryLimit: 3072Mi
     mountSources: true
     command: ['sleep', 'infinity']
