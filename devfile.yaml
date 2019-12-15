@@ -13,7 +13,7 @@ components:
     type: chePlugin
 components:
   - type: dockerimage
-    image: hezhentang/prak_wam_test
+    image: prak_wam_test
     memoryLimit: 3072Mi
     mountSources: true
     command: ['sleep', 'infinity']
