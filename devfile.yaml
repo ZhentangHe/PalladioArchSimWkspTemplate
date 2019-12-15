@@ -13,7 +13,7 @@ projects:
 #    type: chePlugin
 components:
   - type: dockerimage
-    image: hello-world
+    image: hezhentang/dummy
     memoryLimit: 512Mi
     mountSources: true
 #    command: ['sleep', 'infinity']
