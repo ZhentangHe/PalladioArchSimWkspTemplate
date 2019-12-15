@@ -16,7 +16,7 @@ components:
     image: hello-world
     memoryLimit: 2Gi
     mountSources: true
-    command: ['sleep', 'infinity']
+#    command: ['sleep', 'infinity']
     volumes:
       - name: cache
         containerPath: /.cache
