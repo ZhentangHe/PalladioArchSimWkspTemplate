@@ -13,7 +13,7 @@ components:
     type: chePlugin
 components:
   - type: dockerimage
-    image: golang
+    image: hezhentang/prak_wam_test
     memoryLimit: 512Mi
     mountSources: true
     command: ['sleep', 'infinity']
