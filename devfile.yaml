@@ -14,7 +14,7 @@ components:
 components:
   - type: dockerimage
     image: hello-world
-    memoryLimit: 3072Mi
+    memoryLimit: 3Gi
     mountSources: true
     command: ['sleep', 'infinity']
     volumes:
