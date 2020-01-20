@@ -6,12 +6,9 @@ projects:
     source:
       type: git
       location: "https://github.com/ZhentangHe/palladio-simulation-che.git"
-# components:
-#  - id: che-incubator/theia-dev/latest
-#    type: chePlugin
-#  - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
-#    type: chePlugin
 components:
+  - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
+    type: chePlugin
   - type: dockerimage
     image: golang
     memoryLimit: 512Mi
