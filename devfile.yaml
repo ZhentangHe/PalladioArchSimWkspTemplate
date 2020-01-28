@@ -20,6 +20,9 @@ components:
     env:
     - name: PALLADIOPATH
       value: $(CHE_PROJECTS_ROOT)/Palladio
+  - type: dockerimage
+    image: hezhentang/dummy
+    memoryLimit: 400Mi
 # components:
 #  - type: chePlugin
 #    reference: 'https://raw.githubusercontent.com/merlinz165/che-trial/master/plugins/domainmodel-language-server.yaml'
