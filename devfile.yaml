@@ -9,21 +9,27 @@ projects:
 components:
   - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
     type: chePlugin
+ # - type: dockerimage
+ #   image: golang
+ #   memoryLimit: 512Mi
+ #   mountSources: true
+ #   command: ['sleep', 'infinity']
+ #   volumes:
+ #     - name: cache
+ #       containerPath: /.cache
+ #   env:
+ #   - name: PALLADIOPATH
+ #     value: $(CHE_PROJECTS_ROOT)/Palladio
   - type: dockerimage
-    image: golang
-    memoryLimit: 512Mi
+    image: thomasweber/palladioexperimentautomation
+    memoryLimit: 1024Mi
     mountSources: true
-    command: ['sleep', 'infinity']
     volumes:
       - name: cache
         containerPath: /.cache
     env:
     - name: PALLADIOPATH
       value: $(CHE_PROJECTS_ROOT)/Palladio
-  - type: dockerimage
-    image: thomasweber/palladioexperimentautomation
-    memoryLimit: 1024Mi
-    mountSources: true
 #  - type: dockerimage
 #    image: hezhentang/dummy
 #    memoryLimit: 400Mi
