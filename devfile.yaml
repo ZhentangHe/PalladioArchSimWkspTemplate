@@ -22,6 +22,7 @@ components:
  #     value: $(CHE_PROJECTS_ROOT)/Palladio
   - type: dockerimage
     image: thomasweber/palladioexperimentautomation
+    alias: palladio-test
     memoryLimit: 1024Mi
     mountSources: true
     volumes:
