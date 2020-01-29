@@ -25,6 +25,7 @@ components:
     alias: palladio-test
     memoryLimit: 1024Mi
     mountSources: true
+    command: ['usr/RunExperimentAutomation.sh']
     volumes:
       - name: cache
         containerPath: /.cache
