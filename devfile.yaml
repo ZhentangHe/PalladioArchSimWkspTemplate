@@ -5,7 +5,7 @@ projects:
   - name: palladio-simulation
     source:
       type: git
-      startPoint: dev
+      branch: dev
       location: "https://github.com/ZhentangHe/palladio-simulation-che.git"
 components:
   - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
