@@ -27,8 +27,8 @@ components:
     mountSources: true
     command: ['usr/RunExperimentAutomation.sh']
     volumes:
-      - name: cache
-        containerPath: /.cache
+      - name: volume
+        containerPath: /.volume
     env:
     - name: PALLADIOPATH
       value: $(CHE_PROJECTS_ROOT)/Palladio
