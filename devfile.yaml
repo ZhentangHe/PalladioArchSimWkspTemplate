@@ -1,6 +1,7 @@
 apiVersion: 1.0.0
 metadata:
-  generateName: che-palladio-
+  name: che-palladio
+#  generateName: che-palladio-
 projects:
   - name: palladio-simulation
     source:
