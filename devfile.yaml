@@ -1,7 +1,6 @@
 apiVersion: 1.0.0
 metadata:
-  name: che-palladio
-#  generateName: che-palladio-
+  generateName: che-palladio-
 projects:
   - name: palladio-simulation
     source:
@@ -11,17 +10,6 @@ projects:
 components:
   - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
     type: chePlugin
- # - type: dockerimage
- #   image: golang
- #   memoryLimit: 512Mi
- #   mountSources: true
- #   command: ['sleep', 'infinity']
- #   volumes:
- #     - name: cache
- #       containerPath: /.cache
- #   env:
- #   - name: PALLADIOPATH
- #     value: $(CHE_PROJECTS_ROOT)/Palladio
   - type: dockerimage
     image: thomasweber/palladioexperimentautomation
     alias: palladio-test
@@ -33,10 +21,4 @@ components:
         containerPath: /.volume
     env:
     - name: PALLADIOPATH
-      value: $(CHE_PROJECTS_ROOT)/Palladio
-  - type: dockerimage
-    image: hezhentang/dummy
-    memoryLimit: 400Mi
-#  - type: chePlugin
-#    reference: 'https://raw.githubusercontent.com/merlinz165/che-trial/master/plugins/domainmodel-language-server.yaml'
-#    alias: domainmodel-language-server
+      value: $(CHE_PROJECTS_ROOT)
