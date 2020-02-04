@@ -5,12 +5,10 @@ projects:
   - name: PalladioSimulation
     source:
       type: git
-      branch: dev
       location: "https://github.com/ZhentangHe/palladio-simulation-che.git"
   - name: PalladioRunExperiment
     source:
       type: git
-      branch: master
       location: "https://github.com/TomWerm/Palladio-Docker.git"
 components:
   - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
@@ -24,6 +22,6 @@ components:
     volumes:
       - name: volume
         containerPath: /.volume
-    env:
-    - name: PALLADIOPATH
-      value: $(CHE_PROJECTS_ROOT)
+    #env:
+    #- name: PALLADIOPATH
+    #  value: $(CHE_PROJECTS_ROOT)
