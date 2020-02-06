@@ -21,8 +21,8 @@ components:
     mountSources: true
     command: ['/usr/RunExperimentAutomation.sh']
     volumes:
-    - name: volume
+      - name: volume
         containerPath: /.volume
     env:
-    - name: PALLADIOPATH
-      value: $(CHE_PROJECTS_ROOT)
+      - name: PALLADIOPATH
+        value: $(CHE_PROJECTS_ROOT)
