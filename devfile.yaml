@@ -25,4 +25,4 @@ components:
         containerPath: /.volume
     env:
     - name: PALLADIOPATH
-     value: $(CHE_PROJECTS_ROOT)
+      value: $(CHE_PROJECTS_ROOT)
