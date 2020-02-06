@@ -6,10 +6,10 @@ projects:
     source:
       type: git
       location: "https://github.com/ZhentangHe/palladio-simulation-che.git"
-  - name: PalladioRunExperiment
-    source:
-      type: git
-      location: "https://github.com/TomWerm/Palladio-Docker.git"
+#  - name: PalladioRunExperiment
+#    source:
+#      type: git
+#      location: "https://github.com/TomWerm/Palladio-Docker.git"
 components:
   - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
     type: chePlugin
