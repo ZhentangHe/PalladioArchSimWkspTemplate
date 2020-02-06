@@ -14,14 +14,22 @@ components:
   - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
     type: chePlugin
   - type: dockerimage
-    image: thomasweber/palladioexperimentautomation
-    alias: palladio-test
-    memoryLimit: 1024Mi
+    image: golang
+    memoryLimit: 512Mi
     mountSources: true
-    command: ['/usr/RunExperimentAutomation.sh']
+    command: ['sleep', 'infinity']
     volumes:
-      - name: volume
-        containerPath: /.volume
-    #env:
-    #- name: PALLADIOPATH
-    #  value: $(CHE_PROJECTS_ROOT)
+      - name: cache
+        containerPath: /.cache
+#   - type: dockerimage
+#     image: thomasweber/palladioexperimentautomation
+#     alias: palladio-test
+#     memoryLimit: 1024Mi
+#     mountSources: true
+#     command: ['/usr/RunExperimentAutomation.sh']
+#     volumes:
+#       - name: volume
+#         containerPath: /.volume
+#     env:
+#     - name: PALLADIOPATH
+#      value: $(CHE_PROJECTS_ROOT)
