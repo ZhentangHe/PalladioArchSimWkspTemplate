@@ -5,6 +5,7 @@ projects:
   - name: PalladioSimulation
     source:
       type: git
+      branch: master
       location: "https://github.com/ZhentangHe/palladio-simulation-che.git"
 #  - name: PalladioRunExperiment
 #    source:
