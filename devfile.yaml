@@ -7,30 +7,22 @@ projects:
       type: git
       branch: master
       location: "https://github.com/ZhentangHe/palladio-simulation-che.git"
-#  - name: PalladioRunExperiment
-#    source:
-#      type: git
-#      location: "https://github.com/TomWerm/Palladio-Docker.git"
+ - name: PalladioRunExperiment
+   source:
+     type: git
+     location: "https://github.com/TomWerm/Palladio-Docker.git"
 components:
   - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
     type: chePlugin
   - type: dockerimage
-    image: golang
-    memoryLimit: 512Mi
+    image: thomasweber/palladioexperimentautomation
+    alias: palladio-test
+    memoryLimit: 800Mi
     mountSources: true
-    command: ['sleep', 'infinity']
+    command: ['/usr/RunExperimentAutomation.sh']
     volumes:
-      - name: cache
-        containerPath: /.cache
-#   - type: dockerimage
-#     image: thomasweber/palladioexperimentautomation
-#     alias: palladio-test
-#     memoryLimit: 1024Mi
-#     mountSources: true
-#     command: ['/usr/RunExperimentAutomation.sh']
-#     volumes:
-#       - name: volume
-#         containerPath: /.volume
-#     env:
-#     - name: PALLADIOPATH
-#      value: $(CHE_PROJECTS_ROOT)
+      - name: volume
+        containerPath: /.volume
+    env:
+    - name: PALLADIOPATH
+     value: $(CHE_PROJECTS_ROOT)
