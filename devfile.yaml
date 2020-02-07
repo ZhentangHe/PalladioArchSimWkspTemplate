@@ -5,17 +5,15 @@ projects:
   - name: PalladioSimulation
     source:
       type: git
-      startPoint: master
+      branch: master
       location: "https://github.com/ZhentangHe/palladio-simulation-che.git"
 components:
-  - id: ms-kubernetes-tools/vscode-kubernetes-tools/latest
-    type: chePlugin
   - type: dockerimage
     image: thomasweber/palladioexperimentautomation
     alias: palladio-test
-    memoryLimit: 1024Mi
+    memoryLimit: 800Mi
     mountSources: true
-    command: ['usr/RunExperimentAutomation.sh']
+    command: ['/usr/RunExperimentAutomation.sh']
     volumes:
       - name: cache
         containerPath: /.cache
