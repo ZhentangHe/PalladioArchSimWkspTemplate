@@ -7,6 +7,10 @@ projects:
       type: git
       branch: master
       location: "https://github.com/ZhentangHe/palladio-simulation-che.git"
+  - name: PalladioRunExperiment
+    source:
+      type: git
+      location: "https://github.com/TomWerm/Palladio-Docker.git"
 components:
   - type: dockerimage
     image: thomasweber/palladioexperimentautomation
