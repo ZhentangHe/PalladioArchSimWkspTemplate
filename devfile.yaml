@@ -13,9 +13,9 @@ projects:
       location: "https://github.com/TomWerm/Palladio-Docker.git"
 components:
   - type: dockerimage
-    image: thomasweber/palladioexperimentautomation
-    alias: palladio-test
-    memoryLimit: 1000Mi
+    image: palladiosimulator/palladio-experimentautomation
+    alias: palladioSimulator
+    memoryLimit: 800Mi
     mountSources: true
     command: ['/usr/RunExperimentAutomation.sh']
     volumes:
