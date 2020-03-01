@@ -14,7 +14,7 @@ projects:
 components:
   - type: dockerimage
     image: palladiosimulator/palladio-experimentautomation
-    alias: palladioSimulator
+    alias: palladiosimulator
     memoryLimit: 800Mi
     mountSources: true
     command: ['/usr/RunExperimentAutomation.sh']
