@@ -17,7 +17,7 @@ components:
     alias: palladio-ea
     memoryLimit: 800Mi
     mountSources: true
-    command: ['/usr/RunExperimentAutomation.sh']
+    command: ['sleep','infinity']
     volumes:
       - name: cache
         containerPath: /.cache
