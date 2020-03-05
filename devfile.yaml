@@ -19,5 +19,5 @@ components:
     mountSources: true
     command: ['sleep','infinity']
     volumes:
-      - name: wksp_eclipse
-        containerPath: /wksp_eclipse
+      - name: result
+        containerPath: /result
