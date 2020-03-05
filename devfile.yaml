@@ -13,7 +13,7 @@ projects:
       location: "https://github.com/TomWerm/Palladio-Docker.git"
 components:
   - type: dockerimage
-    image: palladiosimulator/palladio-experimentautomation
+    image: hezhentang/palladiotest
     alias: palladio-ea
     memoryLimit: 800Mi
     mountSources: true
