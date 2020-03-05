@@ -19,8 +19,5 @@ components:
     mountSources: true
     command: ['sleep','infinity']
     volumes:
-      - name: cache
-        containerPath: /.cache
-    env:
-    - name: PALLADIOPATH
-      value: $(CHE_PROJECTS_ROOT)
+      - name: result
+        containerPath: /result
