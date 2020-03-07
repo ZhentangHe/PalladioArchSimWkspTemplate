@@ -1,0 +1,6 @@
+  ---
+displayName: Palladio Architecture Simulation Stack
+description: Palladio Architecture Simulation Stack
+tags: ["Palladio", "Palladio Architecture Simulation", "PalladioSimulation"]
+icon: https://www.palladio-simulator.com/fileadmin/_processed_/0/e/csm_palladio-logo-2010_e3b7e086b4.png
+globalMemoryLimit: 2280Mi
