@@ -8,7 +8,7 @@ This `devfile.yaml` includes two projects and one component. NOTE that only the 
 
 The one component here is a docker container and the repository is [here](https://hub.docker.com/r/palladiosimulator/palladio-experimentautomation).
 
-See more in official documentation.
+See more about devfile in [official documentation](https://www.eclipse.org/che/docs/che-7/configuring-a-workspace-using-a-devfile/).
 
 ## Usage
 There are two ways to use this template. 
