@@ -2,7 +2,7 @@ apiVersion: 1.0.0
 metadata:
   generateName: che-palladio-
 projects:
-  - name: PalladioSimulation
+  - name: PalladioArchSimExt
     source:
       type: git
       branch: master
